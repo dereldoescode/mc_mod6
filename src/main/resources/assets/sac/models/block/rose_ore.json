@@ -1,0 +1,6 @@
+{
+	"parent": "block/cube_all",
+	"textures": {
+	"all": "sac:blocks/rose_ore"
+	}
+}
