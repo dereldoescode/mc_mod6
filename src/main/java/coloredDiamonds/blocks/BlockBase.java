@@ -1,7 +1,7 @@
 package coloredDiamonds.blocks;
 
 import coloredDiamonds.Main;
-import coloredDiamonds.init.ModBlock;
+import coloredDiamonds.init.ModBlocks;
 import coloredDiamonds.init.ModItems;
 import coloredDiamonds.util.IHasModel;
 import net.minecraft.block.Block;
@@ -19,7 +19,7 @@ public class BlockBase extends Block implements IHasModel {
 		setRegistryName(name);
 		setCreativeTab(CreativeTabs.MISC);
 		
-		ModBlock.BLOCKS.add(this);
+		ModBlocks.BLOCKS.add(this);
 		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 		
 	}

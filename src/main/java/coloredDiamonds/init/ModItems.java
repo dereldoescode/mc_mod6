@@ -5,7 +5,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import coloredDiamonds.items.ItemBase;
+
 import coloredDiamonds.items.armor.ArmorBase;
+
 import coloredDiamonds.items.tools.ToolAxe;
 import coloredDiamonds.items.tools.ToolHoe;
 import coloredDiamonds.items.tools.ToolPickaxe;
@@ -55,7 +57,10 @@ public static final Item ROSE_CHESTPLATE  = new ArmorBase("rose_chestplate", ARM
 public static final Item ROSE_LEGGINGS = new ArmorBase("rose_leggings", ARMOR_MATERIAL_ROSE, 2, EntityEquipmentSlot.LEGS);
 public static final Item ROSE_BOOTS = new ArmorBase("rose_boots", ARMOR_MATERIAL_ROSE, 1, EntityEquipmentSlot.FEET);
 
+
 }
+
+//
 
 
 

@@ -1,6 +1,6 @@
 package coloredDiamonds.util.handlers;
 
-import coloredDiamonds.init.ModBlock;
+import coloredDiamonds.init.ModBlocks;
 import coloredDiamonds.init.ModItems;
 import coloredDiamonds.util.IHasModel;
 import net.minecraft.block.Block;
@@ -23,7 +23,7 @@ public static void onItemRegister(RegistryEvent.Register<Item> event) {
 @SubscribeEvent
 public static void onBlockRegister(RegistryEvent.Register<Block> event) {
 	
-	event.getRegistry().registerAll(ModBlock.BLOCKS.toArray(new Block[0]));
+	event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
 	
 }
 
@@ -39,7 +39,7 @@ public static void onModelRegister(ModelRegistryEvent event) {
 		
 	
 }
-for(Block block : ModBlock.BLOCKS) {
+for(Block block : ModBlocks.BLOCKS) {
 			if(block instanceof IHasModel) {
 				((IHasModel)block).registerModels();
 			}
