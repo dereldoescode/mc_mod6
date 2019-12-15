@@ -1,7 +1,8 @@
 
 //Items
-item.rose.name=Rose Diamond
+item.sac.rose.name=Rose Gold
 
 //Blocks
-tile.rose_block.name=Rose Gold Block
-tile.rose_block.name=Rose Gold Ore 
+tile.sac.rose_block.name=Rose Gold Block
+tile.sac.rose_block.name=Rose Gold Ore 
+tile.sac.catalyzer_block.name=Catalyzer 

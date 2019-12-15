@@ -35,6 +35,10 @@ public static final ArmorMaterial ARMOR_MATERIAL_ROSE = EnumHelper.addArmorMater
 
 //Items 
 public static final Item rose = new ItemBase("rose"); 
+public static final Item base_sphere = new ItemBase("base_sphere"); 
+public static final Item thunder_sphere = new ItemBase("thunder_sphere"); 
+public static final Item detonation_sphere = new ItemBase("detonation_sphere");
+public static final Item flame_sphere = new ItemBase("flame_sphere"); 
 
 //Tools
 
