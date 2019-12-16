@@ -28,8 +28,22 @@ import coloredDiamonds.blocks.BlockTileEntity;
 public class BlockCatalyzer extends BlockTileEntity<TileEntityCatalyzer> {
 
 	public BlockCatalyzer() {
-		super(Material.ROCK, "catalyzer");
+		super(Material.ROCK, "catalyzer_block");
 	}
+	
+	@Override
+	@Deprecated
+	public boolean isOpaqueCube(IBlockState state) {
+		return true;
+	}
+	
+	@Override
+	@Deprecated
+	public boolean isFullCube(IBlockState state) {
+		return true;
+	}
+
+
 	
 	
 	@Override

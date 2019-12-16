@@ -1,6 +1,5 @@
 package coloredDiamonds.blocks;
 
-import coloredDiamonds.blocks.catalyzer.CatalyzerContents;
 import coloredDiamonds.init.ModBlocks;
 import coloredDiamonds.util.Reference;
 import net.minecraft.client.gui.inventory.GuiContainer;
@@ -15,10 +14,9 @@ private InventoryPlayer playerInv;
 
 public GUICatalyzer(Container container, InventoryPlayer playerInv) {
 	super(container);
-	this.playerInv = playerInv;
-	}
+	this.playerInv = playerInv;}
 	
-	private static final ResourceLocation BG_TEXTURE = new ResourceLocation(Reference.MOD_ID, ":textures/gui/pedestal.png");
+	private static final ResourceLocation BG_TEXTURE = new ResourceLocation(Reference.MOD_ID, ":textures/gui/cat_gui.png");
 	
 	@Override
 	protected void drawGuiContainerBackgroundLayer(float partialTicks, int mouseX, int mouseY) {

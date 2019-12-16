@@ -71,8 +71,8 @@ public ItemStack transferStackInSlot(EntityPlayer player, int index) {
 		addSlotToContainer(new SlotItemHandler(inventory, 0, 80, 35) {
 			@Override
 			public void onSlotChanged() {
-				catalyzer
-				.markDirty();
+				catalyzer.markDirty();
+				
 			}
 		});
 	

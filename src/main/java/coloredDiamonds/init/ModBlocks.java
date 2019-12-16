@@ -21,14 +21,14 @@ public static final Block ROSE_BLOCK = new BlockBase("rose_block", Material.IRON
 
 public static final Block ROSE_ORE = new RoseOre("rose_ore",Material.ROCK);
 
-public static final Block CATALYZER = new BlockCatalyzer();
+public static final BlockCatalyzer CATALYZER = new BlockCatalyzer();
 
 
 
 @SuppressWarnings("deprecation")
 public static void register(IForgeRegistry<Block> registry) {
 	registry.registerAll(
-			// ...
+		
 			CATALYZER
 	);
 
