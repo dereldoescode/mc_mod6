@@ -60,6 +60,14 @@ public ItemStack transferStackInSlot(EntityPlayer player, int index) {
 
 	public CatalyzerContents(InventoryPlayer playerInv, final TileEntityCatalyzer catalyzer) {
 		IItemHandler inventory = catalyzer.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, EnumFacing.NORTH);
+		addSlotToContainer(new SlotItemHandler(inventory, 0, 60, 35) {
+			@Override
+			public void onSlotChanged() {
+				catalyzer
+				.markDirty();
+			}
+		});
+		
 		addSlotToContainer(new SlotItemHandler(inventory, 0, 80, 35) {
 			@Override
 			public void onSlotChanged() {

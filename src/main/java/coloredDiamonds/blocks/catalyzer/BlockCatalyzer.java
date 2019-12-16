@@ -23,8 +23,9 @@ import javax.swing.plaf.basic.BasicComboBoxUI.ItemHandler;
 
 import coloredDiamonds.Main;
 import coloredDiamonds.ModGuiHandler;
+import coloredDiamonds.blocks.BlockTileEntity;
 
-public class BlockCatalyzer extends coloredDiamonds.blocks.BlockTileEntity<TileEntityCatalyzer> {
+public class BlockCatalyzer extends BlockTileEntity<TileEntityCatalyzer> {
 
 	public BlockCatalyzer() {
 		super(Material.ROCK, "catalyzer");
@@ -36,7 +37,7 @@ public class BlockCatalyzer extends coloredDiamonds.blocks.BlockTileEntity<TileE
 		if (!world.isRemote) {
 			TileEntityCatalyzer tile = getTileEntity(world, pos);
 			IItemHandler itemHandler = tile.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, side);
-			if (!player.isSneaking()) {
+			if (player.isSneaking()) {
 				if (player.getHeldItem(hand).isEmpty()) {
 					player.setHeldItem(hand, itemHandler.extractItem(0, 64, false));
 				} else {

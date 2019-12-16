@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "RRR",
+        "RFR",
+        "RRR"
+    ],
+    
+    "key":
+    {
+       "R": {
+			"item": "sac:rose"
+		},
+		"F": {
+			"item": "minecraft:blaze_powder"
+			
+		}
+    },
+    
+    "result":
+    {
+        "item": "sac:base_sphere",
+        "count": 1
+    }
+}
