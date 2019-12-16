@@ -16,7 +16,7 @@ public GUICatalyzer(Container container, InventoryPlayer playerInv) {
 	super(container);
 	this.playerInv = playerInv;}
 	
-	private static final ResourceLocation BG_TEXTURE = new ResourceLocation(Reference.MOD_ID, ":textures/gui/cat_gui.png");
+	private static final ResourceLocation BG_TEXTURE = new ResourceLocation(Reference.MOD_ID + ":textures/gui/cat_gui.png");
 	
 	@Override
 	protected void drawGuiContainerBackgroundLayer(float partialTicks, int mouseX, int mouseY) {

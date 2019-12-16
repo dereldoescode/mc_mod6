@@ -13,7 +13,15 @@ import net.minecraftforge.items.ItemStackHandler;
 
 public class TileEntityCatalyzer extends TileEntity {
 
-	private ItemStackHandler inventory = new ItemStackHandler(2);
+	private ItemStackHandler inventory = new ItemStackHandler(2) {
+		@Override
+		protected void onContentsChanged(int slot) {
+			super.onContentsChanged(slot);
+			markDirty();
+			
+		}
+	};
+	
 
 	@Override
 	public NBTTagCompound writeToNBT(NBTTagCompound compound) {
