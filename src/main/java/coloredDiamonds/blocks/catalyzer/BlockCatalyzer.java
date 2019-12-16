@@ -42,16 +42,17 @@ public class BlockCatalyzer extends coloredDiamonds.blocks.BlockTileEntity<TileE
 				} else {
 					player.setHeldItem(hand, itemHandler.insertItem(0, player.getHeldItem(hand), false));
 				}
-				tile.markDirty();
+				
 			} else {
 			
-  				player.openGui(coloredDiamonds.instance, ModGuiHandler.CATALYZER, world, pos.getX(), pos.getY(), pos.getZ());
+  				player.openGui(Main.instance, ModGuiHandler.CATALYZER, world, pos.getX(), pos.getY(), pos.getZ());
   			}
-  		}
-  	
 			
-		
-		return true;
+			tile.markDirty();
+  			
+  		}
+  		return true;
+			
 	}
 	
 	

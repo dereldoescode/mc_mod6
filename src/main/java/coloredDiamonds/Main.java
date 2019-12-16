@@ -23,11 +23,12 @@ public static CommonProxy proxy;
 @EventHandler
 public static void PreInit(FMLPreInitializationEvent event) {
 	GameRegistry.registerWorldGenerator(new ModWorldGen(), 3) ;
-	NetworkRegistry.INSTANCE.registerGuiHandler(coloredDiamonds.Main.class , new ModGuiHandler());
+	
 }
 @EventHandler
-public static void init(FMLInitializationEvent event) {
+public  void init(FMLInitializationEvent event) {
 	ModRecipes.init();
+	NetworkRegistry.INSTANCE.registerGuiHandler(this , new ModGuiHandler());
 	
 }
 @EventHandler

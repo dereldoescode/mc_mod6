@@ -21,23 +21,24 @@ public static final Block ROSE_BLOCK = new BlockBase("rose_block", Material.IRON
 
 public static final Block ROSE_ORE = new RoseOre("rose_ore",Material.ROCK);
 
-public static final Block CATALYZER = new BlockBase("catalyzer_block", Material.IRON);
+public static final Block CATALYZER = new BlockCatalyzer();
 
-public static BlockCatalyzer catalyzer = new BlockCatalyzer();
 
+
+@SuppressWarnings("deprecation")
 public static void register(IForgeRegistry<Block> registry) {
 	registry.registerAll(
 			// ...
-			catalyzer
+			CATALYZER
 	);
 
-	GameRegistry.registerTileEntity(catalyzer.getTileEntityClass(), catalyzer.getRegistryName().toString());
+	GameRegistry.registerTileEntity(((BlockCatalyzer) CATALYZER).getTileEntityClass(), CATALYZER.getRegistryName().toString());
 }
 
 public static void registerItemBlocks(IForgeRegistry<Item> registry) {
 	registry.registerAll(
 			// ...
-			catalyzer.createItemBlock()
+			((BlockCatalyzer) CATALYZER).createItemBlock()
 	);
 }
 
